@@ -1,7 +1,6 @@
 package task2;
 
-public class Square extends Shape {
-
+public class Square extends Rectangle {
     private double sideA;
 
     public Square(double sideA) {

@@ -1,8 +1,7 @@
 package task2;
 
-public class Circle extends Shape{
+public class Circle extends Shape {
     private static final double PI = 3.14;
-
     private double radius;
 
     public Circle(int radius) {
@@ -11,7 +10,7 @@ public class Circle extends Shape{
 
     @Override
     public double getArea() {
-      return PI * (radius * radius);
+        return PI * (radius * radius);
     }
 
     @Override
