@@ -1,6 +1,6 @@
 package task3;
 
-public class Rectangle implements Calculation{
+public class Rectangle implements ShapeCalculation {
     private double width;
     private double height;
 

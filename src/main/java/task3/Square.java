@@ -1,6 +1,6 @@
 package task3;
 
-public class Square implements Calculation {
+public class Square implements ShapeCalculation {
     private double sideSquare;
 
     public Square(double sideSquare) {
