@@ -6,7 +6,6 @@ public class Person {
     private String firstName;
     private String lastName;
     private int age;
-
     private int socialId;
 
     public Person(String firstName, String lastName, int age, int socialId) {
