@@ -18,4 +18,12 @@ class SmallLettersTest {
         String text = new SmallLetters().formatText("HELLO");
         Assertions.assertNotEquals("HELLO", text);
     }
+
+    @Test
+    void shouldReturnProperWhenTextIsNullOrEmpty() {
+        String textNull = new BigLetters().formatText(null);
+        String textEmpty = new BigLetters().formatText("");
+        assertNull(textNull);
+        assertNull(textEmpty);
+    }
 }

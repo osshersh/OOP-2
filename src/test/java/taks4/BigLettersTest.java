@@ -20,4 +20,12 @@ class BigLettersTest {
         String text = new BigLetters().formatText("hello");
         Assertions.assertNotEquals("hello", text);
     }
+
+    @Test
+    void shouldReturnProperWhenTextIsNullOrEmpty() {
+        String textNull = new BigLetters().formatText(null);
+        String textEmpty = new BigLetters().formatText("");
+        assertNull(textNull);
+        assertNull(textEmpty);
+    }
 }
