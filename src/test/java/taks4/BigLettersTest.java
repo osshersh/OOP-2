@@ -22,10 +22,14 @@ class BigLettersTest {
     }
 
     @Test
-    void shouldReturnProperWhenTextIsNullOrEmpty() {
+    void shouldReturnProperWhenTextIsNull() {
         String textNull = new BigLetters().formatText(null);
-        String textEmpty = new BigLetters().formatText("");
         assertNull(textNull);
-        assertNull(textEmpty);
+    }
+
+    @Test
+    void shouldReturnProperWhenTextIsEmpty() {
+        String textEmpty = new BigLetters().formatText("");
+        assertEquals("", textEmpty);
     }
 }
