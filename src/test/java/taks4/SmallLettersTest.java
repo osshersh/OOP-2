@@ -8,25 +8,19 @@ import static org.junit.jupiter.api.Assertions.*;
 class SmallLettersTest {
 
     @Test
-    void shouldProperWhenTextIsSmallLetters() {
+    void shouldConvertToLowerCase() {
         String text = new SmallLetters().formatText("HELLO");
         Assertions.assertEquals("hello", text);
     }
 
     @Test
-    void shouldProperWhenTextIsNotBigLetters() {
-        String text = new SmallLetters().formatText("HELLO");
-        Assertions.assertNotEquals("HELLO", text);
-    }
-
-    @Test
-    void shouldReturnProperWhenTextIsNull() {
+    void shouldReturnNullWhenTextIsNull() {
         String textNull = new BigLetters().formatText(null);
         assertNull(textNull);
     }
 
     @Test
-    void shouldReturnProperWhenTextIsEmpty() {
+    void shouldReturnEmptyTextWhenTextIsEmpty() {
         String textEmpty = new BigLetters().formatText("");
         assertEquals("", textEmpty);
     }

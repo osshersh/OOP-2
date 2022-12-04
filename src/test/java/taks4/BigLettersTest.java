@@ -10,25 +10,19 @@ import static org.junit.jupiter.api.Assertions.*;
 class BigLettersTest {
 
     @Test
-    void shouldProperWhenTextIsBigLetters() {
+    void shouldConvertToUpperCase() {
         String text = new BigLetters().formatText("hello");
         Assertions.assertEquals("HELLO", text);
     }
 
     @Test
-    void shouldProperWhenTextIsNotSmallLetters() {
-        String text = new BigLetters().formatText("hello");
-        Assertions.assertNotEquals("hello", text);
-    }
-
-    @Test
-    void shouldReturnProperWhenTextIsNull() {
+    void shouldReturnNullWhenTextIsNull() {
         String textNull = new BigLetters().formatText(null);
         assertNull(textNull);
     }
 
     @Test
-    void shouldReturnProperWhenTextIsEmpty() {
+    void shouldReturnEmptyTextWhenTextIsEmpty() {
         String textEmpty = new BigLetters().formatText("");
         assertEquals("", textEmpty);
     }
