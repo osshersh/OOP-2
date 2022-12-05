@@ -11,7 +11,7 @@ public class Triangle {
 
     @Override
     public String toString() {
-        return Triangle.class.getSimpleName() + "{width=<" + width + ">, height=<"
-                + height + ">}";
+        return Triangle.class.getSimpleName() + "{width=" + width + ", height="
+                + height + "}";
     }
 }
